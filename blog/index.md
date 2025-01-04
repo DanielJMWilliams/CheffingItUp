@@ -1,18 +1,22 @@
 ---
 layout: default
-title: "Happy coding"
+title: "Paulina Eats"
 ---
 
-<div class="py-24 max-w-xl mx-auto text-center">
-  <h1 class="text-xl mb-12">
-    <span class="text-4xl block">
-      Jekyllwind
-    </span>
-
-    <span class="uppercase font-light">
-      A Jekyll + Tailwind CSS boilerplate
-    </span>
-  </h1>
-
-  <h2>Build something beautiful with it ✌️</h2>
+<div class="container mx-auto py-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {% for recipe in site.recipes %}
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <a href="{{ recipe.url }}">
+          <img class="w-full h-48 object-cover" src="{{ recipe.image }}" alt="{{ recipe.title }}">
+        </a>
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2"><a href="{{ recipe.url }}">{{ recipe.title }}</a></h2>
+          <p class="text-gray-600">{{ recipe.description }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>
+
+

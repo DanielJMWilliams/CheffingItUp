@@ -1,12 +1,17 @@
 url: ''
 baseurl: ''
-title: 'Jekyllwind'
+title: 'Paulina Eats'
 
 plugins:
   - jekyll-postcss-v2
 
 postcss:
   cache: false
+
+collections:
+  recipes:
+    output: true
+
 
 exclude:
   - package.json
