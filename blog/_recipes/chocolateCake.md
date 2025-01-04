@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: recipe
 title: "Chocolate Cake"
 image: "/assets/img/cake.jpg"
 description: This is a delicious chocolate cake.
@@ -20,6 +20,7 @@ instructions:
   - "Pour into a greased 9x9 inch pan."
   - "Bake for 30-35 minutes."
 ---
+{{title}}
 
 ## Ingredients
 {% for ingredient in page.ingredients %}
