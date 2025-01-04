@@ -20,16 +20,4 @@ instructions:
   - "Pour into a greased 9x9 inch pan."
   - "Bake for 30-35 minutes."
 ---
-{{title}}
-
-## Ingredients
-{% for ingredient in page.ingredients %}
-- {{ ingredient }}
-{% endfor %}
-
-## Instructions
-{% for instruction in page.instructions %}
-1. {{ instruction }}
-{% endfor %}
-
-![{{ page.title }}]({{ page.image }})
+Extra content for chocolate cake here.
