@@ -8,9 +8,9 @@ title: "Paulina Eats"
     {% for recipe in site.recipes %}
       <div class="bg-white rounded-lg shadow-md overflow-hidden">
         <a href="{{ recipe.url }}">
-          <img class="w-full h-48 object-cover" src="{{ recipe.image }}" alt="{{ recipe.title }}">
+          <img class="w-full h-48 object-cover" src="{{ recipe.image | relative_url }}" alt="{{ recipe.title }}">
         </a>
-        <a href="{{ recipe.url }}">
+        <a href="{{ recipe.url | relative_url}}">
         <div class="p-4">
           <h2 class="text-xl font-semibold mb-2">{{ recipe.title }}</h2>
           <p class="text-gray-600">{{ recipe.description }}</p>

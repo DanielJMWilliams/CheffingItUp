@@ -1,5 +1,5 @@
 url: 'https://danieljmwilliams.github.io'
-baseurl: 'CheffingItUp'
+baseurl: '/CheffingItUp'
 title: 'Paulina Eats'
 
 plugins:
@@ -11,6 +11,7 @@ postcss:
 collections:
   recipes:
     output: true
+    permalink: /CheffingItUp/recipes/:title/
 
 
 exclude:
