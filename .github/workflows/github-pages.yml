@@ -23,6 +23,7 @@ jobs:
       - name: Change to Blog Directory
         run: cd blog
       - run: npm install
+        working-directory: ./blog
       - name: Build site
         uses: limjh16/jekyll-action-ts@v2
         with:
@@ -31,4 +32,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: $
-          publish_dir: ./_site
+          publish_dir: ./blog/_site
