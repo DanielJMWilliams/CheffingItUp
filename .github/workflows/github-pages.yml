@@ -29,7 +29,7 @@ jobs:
         with:
           enable_cache: true
       - name: List _site Directory
-        run: ls -la ./_site
+        run: ls .
         working-directory: ./blog
 
       - name: Deploy
