@@ -20,17 +20,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '18'
-      - name: Change to Blog Directory
-        run: cd blog
       - run: npm install
-        working-directory: ./blog
       - name: Build site
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
-      - name: List _site Directory
+      - name: List Directory
         run: ls .
-        working-directory: ./blog
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
