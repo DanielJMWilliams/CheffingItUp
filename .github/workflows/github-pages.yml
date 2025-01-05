@@ -20,6 +20,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '18'
+      - name: Change to Blog Directory
+        run: cd
       - run: npm install
       - name: Build site
         uses: limjh16/jekyll-action-ts@v2
