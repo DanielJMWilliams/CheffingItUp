@@ -7,7 +7,7 @@ title: "Paulina Eats"
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {% for recipe in site.recipes %}
       <div class="bg-white rounded-lg shadow-md overflow-hidden">
-        <a href="{{ recipe.url }}">
+        <a href="{{ recipe.url | relative_url}}">
           <img class="w-full h-48 object-cover" src="{{ recipe.image | relative_url }}" alt="{{ recipe.title }}">
         </a>
         <a href="{{ recipe.url | relative_url}}">
