@@ -11,7 +11,7 @@ postcss:
 collections:
   recipes:
     output: true
-    permalink: /recipes/:title/
+    permalink: /CheffingItUp/recipes/:title/
 
 
 exclude:
