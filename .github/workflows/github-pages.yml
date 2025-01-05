@@ -28,8 +28,12 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
+      - name: List _site Directory
+        run: ls -la ./_site
+        working-directory: ./blog
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./blog/_site
+          publish_dir: ./_site
