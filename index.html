@@ -1,24 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paulina Eats - Paulina Eats</title>
   <link rel="stylesheet" href="/CheffingItUp/assets/css/main.css">
+  <meta name="description" content="Paulina Eats - Delicious recipes and cooking tips from a passionate home chef">
+  <!-- Consider adding favicon -->
 </head>
-<body class="flex flex-col min-h-screen">
-  <header class=" text-gray-800 py-4 shadow-sm">
-  <div class="container mx-auto flex justify-center">
-    <a href="/CheffingItUp/">
-      <h1 class="text-2xl font-light">Paulina Eats</h1>
-    </a>
+<body class="flex flex-col min-h-screen bg-gray-50">
+  <header class="bg-white text-gray-800 py-6 shadow-sm border-b border-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col items-center space-y-4">
+      <!-- Site Title -->
+      <a href="/CheffingItUp/" class="hover:text-orange-600 transition-colors">
+        <h1 class="text-3xl font-bold tracking-tight text-gray-900">
+          Paulina's Kitchen
+        </h1>
+      </a>
+
+      <!-- Navigation Categories -->
+      <nav class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm font-medium">
+        <a href="/CheffingItUp/" class="px-4 py-2 text-gray-600 hover:text-orange-600 transition-colors border-2 border-gray-200 rounded-full hover:border-orange-400">
+          Main Meals
+        </a>
+        <a href="/CheffingItUp/" class="px-4 py-2 text-gray-600 hover:text-orange-600 transition-colors border-2 border-gray-200 rounded-full hover:border-orange-400">
+          Desserts
+        </a>
+        <a href="/CheffingItUp/" class="px-4 py-2 text-gray-600 hover:text-orange-600 transition-colors border-2 border-gray-200 rounded-full hover:border-orange-400">
+          One Pot Meals
+        </a>
+        <a href="/CheffingItUp/" class="px-4 py-2 text-gray-600 hover:text-orange-600 transition-colors border-2 border-gray-200 rounded-full hover:border-orange-400">
+          Dinner Party
+        </a>
+      </nav>
+    </div>
   </div>
 </header>
-
-  <div class="flex-grow container mx-auto py-8">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-      <!-- Main Content Column -->
-      <div class="lg:col-span-2">
-        <div class="container mx-auto">
+  
+  <main class="flex-grow">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-4 py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12">
+        <!-- Main Content -->
+        <div class="lg:col-span-8 xl:col-span-9">
+          <div class="container mx-auto">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     
       <div class="bg-white rounded-lg shadow-md overflow-hidden">
@@ -37,24 +62,33 @@
 </div>
 
 
-      </div>
-      <!-- Right Column with Portrait Image -->
-      <div class="hidden lg:block">
-        <div class="flex">
-          <img class="w-auto rounded-lg h-80 object-cover" src="/CheffingItUp/assets/img/paulinachef-portrait.jpg" alt="Paulina Cooking">
-          <div class="ml-2">
-            <h1 class="text-lg">Paulina Eats</h1>
-            <p>Hi, I am Paulina and I like to eat!</p>
-          </div>
         </div>
-        <p></p>
+
+        <!-- Sidebar -->
+        <aside class="lg:col-span-3">
+          <div class="sticky top-24 space-y-8">
+            <!-- Author Card -->
+            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100">
+              <div class="text-center">
+                <div class="relative -mt-8 mb-16"> <!-- Negative margin to lift the image -->
+                  <img class="w-40 h-60 rounded-xl object-cover object-top mx-auto mb-4 border-4 border-orange-50 shadow-md" 
+                       src="/CheffingItUp/assets/img/paulinachef-portrait.jpg" 
+                       style="transform: translateY(15%)" 
+                       alt="Paulina cooking in her kitchen">
+                </div>
+                <h2 class="text-xl font-bold text-gray-800 my-2">Hi, I'm Paulina! 👋</h2>
+                <p class="text-gray-600 text-sm mb-4">Self-taught chef & food lover from Poland</p>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Sharing my kitchen adventures, family recipes, and discoveries from local markets. Let's make everyday meals extraordinary!
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
-  </div>
-  <!-- footer.html -->
-<footer>
-    <p>&copy; 2025 Paulina Eats. All rights reserved.</p>
-</footer>
+  </main>
 
 </body>
 </html>
