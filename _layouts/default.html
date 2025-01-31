@@ -1,31 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} - {{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <meta name="description" content="Paulina Eats - Delicious recipes and cooking tips from a passionate home chef">
+  <!-- Consider adding favicon -->
 </head>
-<body class="flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen bg-gray-50">
   {% include header.html %}
-  <div class="flex-grow container mx-auto py-8">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-      <!-- Main Content Column -->
-      <div class="lg:col-span-2">
-        {{ content }}
-      </div>
-      <!-- Right Column with Portrait Image -->
-      <div class="hidden lg:block">
-        <div class="flex">
-          <img class="w-auto rounded-lg h-80 object-cover" src="{{ '/assets/img/paulinachef-portrait.jpg' | relative_url }}" alt="Paulina Cooking">
-          <div class="ml-2">
-            <h1 class="text-lg">Paulina Eats</h1>
-            <p>Hi, I am Paulina and I like to eat!</p>
-          </div>
+  
+  <main class="flex-grow">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-4 py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12">
+        <!-- Main Content -->
+        <div class="lg:col-span-8 xl:col-span-9">
+          {{ content }}
         </div>
-        <p></p>
+
+        <!-- Sidebar -->
+        <aside class="lg:col-span-3">
+          <div class="sticky top-24 space-y-8">
+            <!-- Author Card -->
+            <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-100">
+              <div class="text-center">
+                <div class="relative -mt-8 mb-16"> <!-- Negative margin to lift the image -->
+                  <img class="w-40 h-60 rounded-xl object-cover object-top mx-auto mb-4 border-4 border-orange-50 shadow-md" 
+                       src="{{ '/assets/img/paulinachef-portrait.jpg' | relative_url }}" 
+                       style="transform: translateY(15%)" 
+                       alt="Paulina cooking in her kitchen">
+                </div>
+                <h2 class="text-xl font-bold text-gray-800 my-2">Hi, I'm Paulina! 👋</h2>
+                <p class="text-gray-600 text-sm mb-4">Self-taught chef & food lover from Poland</p>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Sharing my kitchen adventures, family recipes, and discoveries from local markets. Let's make everyday meals extraordinary!
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
-  </div>
-  {% include footer.html %}
+  </main>
+
 </body>
 </html>

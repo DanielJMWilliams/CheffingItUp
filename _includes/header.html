@@ -1,7 +1,28 @@
-<header class=" text-gray-800 py-4 shadow-sm">
-  <div class="container mx-auto flex justify-center">
-    <a href="{{ '/' | relative_url }}">
-      <h1 class="text-2xl font-light">Paulina Eats</h1>
-    </a>
+<header class="bg-white text-gray-800 py-6 shadow-sm border-b border-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col items-center space-y-4">
+      <!-- Site Title -->
+      <a href="{{ '/' | relative_url }}" class="hover:text-orange-600 transition-colors">
+        <h1 class="text-3xl font-bold tracking-tight text-gray-900">
+          Paulina's Kitchen
+        </h1>
+      </a>
+
+      <!-- Navigation Categories -->
+      <nav class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm font-medium">
+        <a href="{{ '/' | relative_url }}" class="px-4 py-2 text-gray-600 hover:text-orange-600 transition-colors border-2 border-gray-200 rounded-full hover:border-orange-400">
+          Main Meals
+        </a>
+        <a href="{{ '/' | relative_url }}" class="px-4 py-2 text-gray-600 hover:text-orange-600 transition-colors border-2 border-gray-200 rounded-full hover:border-orange-400">
+          Desserts
+        </a>
+        <a href="{{ '/' | relative_url }}" class="px-4 py-2 text-gray-600 hover:text-orange-600 transition-colors border-2 border-gray-200 rounded-full hover:border-orange-400">
+          One Pot Meals
+        </a>
+        <a href="{{ '/' | relative_url }}" class="px-4 py-2 text-gray-600 hover:text-orange-600 transition-colors border-2 border-gray-200 rounded-full hover:border-orange-400">
+          Dinner Party
+        </a>
+      </nav>
+    </div>
   </div>
 </header>
