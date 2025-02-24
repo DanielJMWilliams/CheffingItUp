@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Łazanki - Paulina Eats</title>
+  <title>Gulasz - Paulina Eats</title>
   <link rel="stylesheet" href="/CheffingItUp/assets/css/main.css">
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -44,7 +44,7 @@
         <header class="mb-12">
             <div class="flex justify-between items-center mb-8">
               <h1 class="text-4xl font-bold text-gray-800 font-serif max-w-[75%] truncate" 
-                  x-text="language === 'en' ? 'Łazanki' : 'Łazanki'">
+                  x-text="language === 'en' ? 'Gulasz' : 'Gulasz'">
               </h1>
               
               <!-- Language Toggle -->
@@ -77,7 +77,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
             <span class="font-medium" x-text="language === 'en' ? 'Prep Time' : 'Czas przygotowania'"></span>: 
-            <span class="ml-1 text-gray-800">30 <span x-text="language === 'en' ? 'mins' : 'min'"></span></span>
+            <span class="ml-1 text-gray-800">45 <span x-text="language === 'en' ? 'mins' : 'min'"></span></span>
           </div>
         </div>
 
@@ -86,15 +86,15 @@
           <div class="max-w-2xl mx-auto group">
             <div class="relative overflow-hidden rounded-xl shadow-lg border-4 border-white">
               <img class="w-full h-80 object-cover transform transition duration-500 group-hover:scale-105" 
-                   src="/CheffingItUp/assets/img/%C5%81azanki.jpg" 
-                   alt="Łazanki / Łazanki"
-                   x-bind:alt="language === 'en' ? 'Łazanki' : 'Łazanki'">
+                   src="/CheffingItUp/assets/img/gulasz.jpg" 
+                   alt="Gulasz / Gulasz"
+                   x-bind:alt="language === 'en' ? 'Gulasz' : 'Gulasz'">
             </div>
             <div class="mt-4 text-center">
               <p class="text-sm text-gray-600 italic font-medium px-4" 
-                 x-show="language === 'en'">"Simple and delicious"</p>
+                 x-show="language === 'en'">"This is a delicious polish classic (yummmmaaaaaayyyyyy)."</p>
               <p class="text-sm text-gray-600 italic font-medium px-4" 
-                 x-show="language === 'pl'">"Prosta i pyszna polska potrawa"</p>
+                 x-show="language === 'pl'">"To pyszna, tradycyjna polska potrawa (mniam mniam!)."</p>
             </div>
           </div>
         </div>
@@ -111,37 +111,31 @@
             <ul class="space-y-3 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '1 Green Cabbage (I prefer pointed or savoy).', pl: '1 Mała zielona kapusta' }">
+                  x-data="{ en: '500g Diced beef', pl: '500g Pokrojonej wołowiny' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '1 Leek', pl: '1 Por' }">
+                  x-data="{ en: '1 large onion', pl: '1 duża cebula' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '1 Large onion', pl: '1 Duża cebula' }">
+                  x-data="{ en: '1 tbsp Creme Fraiche or lactose free alternative', pl: '1 łyżka śmietany lub alternatywy bez laktozy' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: 'Butter', pl: 'Masło' }">
+                  x-data="{ en: '2 Beef Stock Cubes', pl: '2 kostki bulionu wołowego' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '250g Chestnut mushrooms', pl: '250g Pieczarek' }">
-                <span class="text-orange-600 mr-2 mt-1">▹</span>
-                <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
-              </li>
-              
-              <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '250g Pasta', pl: '250g Makaronu' }">
+                  x-data="{ en: '1-2 tbsp Cornflour', pl: '1-2 łyżki mąki' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
@@ -181,7 +175,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Chop the cabbage into small pieces and boil it in a pan of salted water until soft.', pl: 'Pokrój kapuste w małe kawałki i zagotuj w posolonej wodzie, aż zmięknie.' }"
+                   x-data="{ en: 'Preheat oven to 180°C.', pl: 'Rozgrzej piekarnik do 180°C.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -193,7 +187,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'To the boiled cabbage in the pot, add the pasta and cook until it's al dente. (Traditionally made with Łazanki, but you can use any type).', pl: 'Do garnka z zagotowaną kapustą, dodaj makaron i gotuj aż będzie al dente. (Tradycyjne danie jest robione z Łazankami, ale można użyć jakiegokolwieg).' }"
+                   x-data="{ en: 'Heat a tbsp of oil in a pot that can also go into the oven with a lid.', pl: 'Podgrzej łyżkę oleju w garnku, który można włożyć do piekarnika (z pokrywką).' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -205,7 +199,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Heat a tbsp. of butter in a pan.', pl: 'Podgrzej łyżkę masła w patelni.' }"
+                   x-data="{ en: 'Dice your onion and fry it in the pot until soft, but not brown, then add the beef.', pl: 'Pokrój cebulę w kostkę i podsmażaj w garnku aż zmięknie (ale nie zrumieni się), następnie dodaj wołowinę.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -217,7 +211,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Dice your onion and sauté in the pot until soft, but not brown.', pl: 'Pokrój cebulę w kostkę i podsmarz w patelni aż zmięknie (ale nie zrumieni się).' }"
+                   x-data="{ en: 'Cook until the beef starts to get brown in places', pl: 'Smaż aż mięso zacznie się rumienić' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -229,7 +223,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Slice the leek and add it to the onion to soften as well.', pl: 'Pokrój pora i dodaj do cebuli i go podduś razem z cebulą.' }"
+                   x-data="{ en: 'Season with salt, pepper and vegeta (not a lot of salt as stock cubes will make it salty).', pl: 'Dopraw solą, pieprzem i vegetą (niewiele soli, ponieważ kostki bulionowe już ją zawierają).' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -241,7 +235,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Slice the mushroom whilst the leek is cooking and add it to the pan.', pl: 'Pokrój pieczarki na plasterki i dodaj do patelni.' }"
+                   x-data="{ en: 'Add enough water to cover the beef and add your stock cubes. Make sure there is enough water as this will be the sauce.', pl: 'Dolej wody aby przykryła mięso i dodaj kostki bulionowe. Zostaw wystarczająco wody - będzie to sos.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -253,7 +247,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Add the cooked pasta and cabbage to the pan.', pl: 'Dodaj makaron i kapuste do patelni.' }"
+                   x-data="{ en: 'Put in oven and cook until the meat is soft. Then remove it from the oven.', pl: 'Włóż do piekarnika i piecz aż mięso zmięknie. Następnie wyjmij garnek z piekarnika.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -265,7 +259,19 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Season with salt, pepper and vegeta, to taste. You can also add more butter for more flavour.', pl: 'Dopraw solą, pieprzem i vegetą. Można też dodać więcej masła do smaku.' }"
+                   x-data="{ en: 'Take out 2-3 tbsp of the sauce from the pot into a mug and add Creme fraiche, cornflour and top with 3tbsp of cold water. Mix until there are no lumps.', pl: 'Zbierz 2-3 łyżki sosu z garnka do kubka, dodaj śmietanę, mąkę i 3 łyżki zimnej wody. Mieszaj aż uzyskasz gładką masę.' }"
+                   x-text="language === 'en' ? en : pl">
+                </p>
+              </div>
+            </li>
+            
+            <li class="relative pl-12 group">
+              <div class="absolute left-0 top-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold transform group-hover:scale-110 transition-transform">
+                9
+              </div>
+              <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <p class="text-gray-700 leading-relaxed"
+                   x-data="{ en: 'Add this mixture to the meat pot and heat on hob until the sauce thickens.', pl: 'Dodaj mieszaninę do garnka z mięsem i podgrzewaj na kuchence aż sos zgęstnieje.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
