@@ -2,7 +2,7 @@
 layout: recipe
 title: "Miso Ramen"
 title_pl: "Miso Ramen"
-image: ""
+image: "/assets/img/ramen.jpg"
 prep_time: 30
 servings: 4
 description: "Heart warming soup."

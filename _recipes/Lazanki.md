@@ -30,17 +30,11 @@ ingredients:
 
 instructions:
   - en: "Chop the cabbage into small pieces and boil it in a pan of salted water until soft."
-    pl: "Pokrój kapuste w małe kawałki i zagotuj w posolonej wodzie, aż zmięknie."
-  - en: "To the boiled cabbage in the pot, add the pasta."
-    pl: "Dodaj makaron do kapusty"
-  - en: "To the boiled cabbage in the pot, add the pasta and cook until it's al dente. 
-     s(Traditionally made with Łazanki, but you can use any type)."
-    pl: "Do garnka z zagotowaną kapustą, dodaj makaron i gotuj aż będzie al dente.
-     (Tradycyjne danie jest robione z Łazankami, ale można użyć jakiegokolwieg)."
+    pl: "Pokrój kapustę w małe kawałki i zagotuj w posolonej wodzie, aż zmięknie."
+  - en: "To the boiled cabbage in the pot, add the pasta and cook until its al dente."
+    pl: "Dodaj makaron do garnka z kapustą i gotuj aż będzie al dente."
   - en: "Heat a tbsp. of butter in a pan."
     pl: "Podgrzej łyżkę masła w patelni."
-  - en: "Add the pasta to the boiled cabbage. helllooooooooo"
-    pl: "Dodaj makaron do kapusty."
   - en: "Dice your onion and sauté in the pot until soft, but not brown."
     pl: "Pokrój cebulę w kostkę i podsmarz w patelni aż zmięknie (ale nie zrumieni się)."
   - en: "Slice the leek and add it to the onion to soften as well."
@@ -48,7 +42,7 @@ instructions:
   - en: "Slice the mushroom whilst the leek is cooking and add it to the pan."
     pl: "Pokrój pieczarki na plasterki i dodaj do patelni."
   - en: "Add the cooked pasta and cabbage to the pan."
-    pl: "Dodaj makaron i kapuste do patelni."
+    pl: "Dodaj makaron i kapustę do patelni."
   - en: "Season with salt, pepper and vegeta, to taste. You can also add more butter for more flavour."
     pl: "Dopraw solą, pieprzem i vegetą. Można też dodać więcej masła do smaku."
 ---
