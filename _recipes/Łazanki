@@ -29,6 +29,7 @@ ingredients:
     pl: "Vegeta"
 
 instructions:
+
   - en: "Chop the cabbage into small pieces and boil it in a pan of salted water until soft."
     pl: "Pokrój kapuste w małe kawalki i zagotuj w posolonej wodzie, aż zmięknieje."
   - en: "To the boiled cabbage in the pot, add pasta and cook it until it's al dente (Traditionally made with Łazanki, but you can use any type)."
@@ -43,6 +44,6 @@ instructions:
     pl: "Pokrój pieczarki na plasterki i dodaj do patelni."
   - en: "Add the cooked pasta and cabbage to the pan."
     pl: "Dodaj makaron i kapuste do patelni."
-  - en: "Season with salt, pepper and vegeta, to taste. Ypu can also add more butter for more flavour."
+  - en: "Season with salt, pepper and vegeta, to taste. You can also add more butter for more flavour."
     pl: "Dopraw solą, pieprzem i vegetą. Można też dodać więcej masła do smaku."
 ---
