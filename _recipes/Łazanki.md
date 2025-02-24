@@ -37,7 +37,7 @@ instructions:
      (Tradycyjne danie jest robione z Łazankami, ale można użyć jakiegokolwieg)."
   - en: "Heat a tbsp. of butter in a pan."
     pl: "Podgrzej łyżkę masła w patelni."
-  - en: "Add the pasta to the boiled cabbage."
+  - en: "Add the pasta to the boiled cabbage. helllooooooooo"
     pl: "Dodaj makaron do kapusty."
   - en: "Dice your onion and sauté in the pot until soft, but not brown."
     pl: "Pokrój cebulę w kostkę i podsmarz w patelni aż zmięknie (ale nie zrumieni się)."
