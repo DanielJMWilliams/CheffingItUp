@@ -50,7 +50,7 @@ instructions:
     pl: ""
   - en: "Add the veggie stock to the pan and then add your spinach and let it simmer for 2-3mins."
     pl: ""
-  - en: "Transfer everything to a blander and blend until smooth. You can alternatively use a hand blender if using a steel pan."
+  - en: "Transfer everything to a blender and blend until smooth. You can alternatively use a hand blender if using a steel pan."
     pl: ""
   - en: "Transfer the sauce back into the pan and chop your mushroom into whatever size/shape you like, then add to the sauce."
     pl: ""
