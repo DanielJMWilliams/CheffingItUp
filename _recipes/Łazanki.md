@@ -32,7 +32,7 @@ instructions:
   - en: "Chop the cabbage into small pieces and boil it in a pan of salted water until soft."
     pl: "Pokrój kapuste w małe kawałki i zagotuj w posolonej wodzie, aż zmięknie."
   - en: "To the boiled cabbage in the pot, add the pasta and cook until it's al dente. 
-     s(Traditionally made with Łazanki, but you can use any type)."
+     (Traditionally made with Łazanki, but you can use any type)."
     pl: "Do garnka z zagotowaną kapustą, dodaj makaron i gotuj aż będzie al dente.
      (Tradycyjne danie jest robione z Łazankami, ale można użyć jakiegokolwieg)."
   - en: "Heat a tbsp. of butter in a pan."
