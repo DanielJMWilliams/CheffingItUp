@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Łazanki - Paulina Eats</title>
+  <title>Saag Paneer - Paulina Eats</title>
   <link rel="stylesheet" href="/CheffingItUp/assets/css/main.css">
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -44,7 +44,7 @@
         <header class="mb-12">
             <div class="flex justify-between items-center mb-8">
               <h1 class="text-4xl font-bold text-gray-800 font-serif max-w-[75%] truncate" 
-                  x-text="language === 'en' ? 'Łazanki' : 'Łazanki'">
+                  x-text="language === 'en' ? 'Saag Paneer' : 'Paneer ze Szpinakiem'">
               </h1>
               
               <!-- Language Toggle -->
@@ -86,15 +86,15 @@
           <div class="max-w-2xl mx-auto group">
             <div class="relative overflow-hidden rounded-xl shadow-lg border-4 border-white">
               <img class="w-full h-80 object-cover transform transition duration-500 group-hover:scale-105" 
-                   src="/CheffingItUp/assets/img/%C5%81azanki.jpg" 
-                   alt="Łazanki / Łazanki"
-                   x-bind:alt="language === 'en' ? 'Łazanki' : 'Łazanki'">
+                   src="/CheffingItUp/assets/img/saag_paneer.jpg" 
+                   alt="Saag Paneer / Paneer ze Szpinakiem"
+                   x-bind:alt="language === 'en' ? 'Saag Paneer' : 'Paneer ze Szpinakiem'">
             </div>
             <div class="mt-4 text-center">
               <p class="text-sm text-gray-600 italic font-medium px-4" 
-                 x-show="language === 'en'">"Simple and delicious"</p>
+                 x-show="language === 'en'">"Home twist on a flavoursome vegeterian curry"</p>
               <p class="text-sm text-gray-600 italic font-medium px-4" 
-                 x-show="language === 'pl'">"Prosta i pyszna polska potrawa"</p>
+                 x-show="language === 'pl'">"Mój domowy twist na smakowitą wegetariańską curry"</p>
             </div>
           </div>
         </div>
@@ -111,55 +111,85 @@
             <ul class="space-y-3 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '1 Green Cabbage (I prefer pointed or savoy).', pl: '1 Mała zielona kapusta' }">
-                <span class="text-orange-600 mr-2 mt-1">▹</span>
-                <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
-              </li>
-              
-              <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '1 Leek', pl: '1 Por' }">
-                <span class="text-orange-600 mr-2 mt-1">▹</span>
-                <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
-              </li>
-              
-              <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
                   x-data="{ en: '1 Large onion', pl: '1 Duża cebula' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: 'Butter', pl: 'Masło' }">
+                  x-data="{ en: '4 Cloves of garlic', pl: '4 ząbki czosnku' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '250g Chestnut mushrooms', pl: '250g Pieczarek' }">
+                  x-data="{ en: '2 tbsp. Curry powder', pl: '2 tbsp. Curry powder' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '250g Pasta', pl: '250g Makaronu' }">
+                  x-data="{ en: '1 tsp. Garam Masala', pl: '1 tsp. Garam Masala' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: 'Salt', pl: 'Sól' }">
+                  x-data="{ en: '1 tsp. Ground Corriander', pl: '1 tsp. Ground Corriander' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: 'Pepper', pl: 'Pieprz' }">
+                  x-data="{ en: '1tsp. Ground cumin', pl: '1tsp. Ground cumin' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: 'Vegeta', pl: 'Vegeta' }">
+                  x-data="{ en: '1 Pack of spinach', pl: '1 Pack of spinach' }">
+                <span class="text-orange-600 mr-2 mt-1">▹</span>
+                <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
+              </li>
+              
+              <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
+                  x-data="{ en: 'Paneer', pl: 'Paneer' }">
+                <span class="text-orange-600 mr-2 mt-1">▹</span>
+                <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
+              </li>
+              
+              <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
+                  x-data="{ en: '250g Mushrooms', pl: '250g Mushrooms' }">
+                <span class="text-orange-600 mr-2 mt-1">▹</span>
+                <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
+              </li>
+              
+              <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
+                  x-data="{ en: '1 Pack of Quorn Pieces', pl: '1 Pack of Quorn Pieces' }">
+                <span class="text-orange-600 mr-2 mt-1">▹</span>
+                <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
+              </li>
+              
+              <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
+                  x-data="{ en: '400ml Veggie Stock', pl: '400ml Veggie Stock' }">
+                <span class="text-orange-600 mr-2 mt-1">▹</span>
+                <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
+              </li>
+              
+              <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
+                  x-data="{ en: 'Salt', pl: 'Salt' }">
+                <span class="text-orange-600 mr-2 mt-1">▹</span>
+                <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
+              </li>
+              
+              <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
+                  x-data="{ en: 'Pepper', pl: 'Pepper' }">
+                <span class="text-orange-600 mr-2 mt-1">▹</span>
+                <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
+              </li>
+              
+              <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
+                  x-data="{ en: 'Rice', pl: 'Rice' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
@@ -181,7 +211,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Chop the cabbage into small pieces and boil it in a pan of salted water until soft.', pl: 'Pokrój kapuste w małe kawałki i zagotuj w posolonej wodzie, aż zmięknie.' }"
+                   x-data="{ en: 'Start by slicing your onions and chopping your garlic.', pl: 'Start by slicing your onions and chopping your garlic.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -193,7 +223,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'To the boiled cabbage in the pot, add the pasta and cook until it's al dente. s(Traditionally made with Łazanki, but you can use any type).', pl: 'Do garnka z zagotowaną kapustą, dodaj makaron i gotuj aż będzie al dente. (Tradycyjne danie jest robione z Łazankami, ale można użyć jakiegokolwieg).' }"
+                   x-data="{ en: 'Heat a tbsp. of oil in a pan and fry your onion and garlic.', pl: 'Heat a tbsp. of oil in a pan and fry your onion and garlic.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -205,7 +235,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Heat a tbsp. of butter in a pan.', pl: 'Podgrzej łyżkę masła w patelni.' }"
+                   x-data="{ en: 'Add your spices and fry for 1 min.', pl: 'Add your spices and fry for 1 min.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -217,7 +247,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Add the pasta to the boiled cabbage. helllooooooooo', pl: 'Dodaj makaron do kapusty.' }"
+                   x-data="{ en: 'Add the veggie stock to the pan and then add your garlic and let it simmer for 2-3mins.', pl: 'Add the veggie stock to the pan and then add your garlic and let it simmer for 2-3mins.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -229,7 +259,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Dice your onion and sauté in the pot until soft, but not brown.', pl: 'Pokrój cebulę w kostkę i podsmarz w patelni aż zmięknie (ale nie zrumieni się).' }"
+                   x-data="{ en: 'Transfer everything to a blander and blend until smooth. You can alternatively use a hand blender if using a steel pan.', pl: 'Transfer everything to a blander and blend until smooth. You can alternatively use a hand blender if using a steel pan.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -241,7 +271,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Slice the leek and add it to the onion to soften as well.', pl: 'Pokrój pora i dodaj do cebuli i go podduś razem z cebulą.' }"
+                   x-data="{ en: 'Transfer the sauce back into the pan and chop your mushroom into whatever size/shape you like, then add to the sauce.', pl: 'Transfer the sauce back into the pan and chop your mushroom into whatever size/shape you like, then add to the sauce.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -253,7 +283,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Slice the mushroom whilst the leek is cooking and add it to the pan.', pl: 'Pokrój pieczarki na plasterki i dodaj do patelni.' }"
+                   x-data="{ en: 'Chop the paneer into large squares and add to the pan, then add the quorn pieces.', pl: 'Chop the paneer into large squares and add to the pan, then add the quorn pieces.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -265,7 +295,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Add the cooked pasta and cabbage to the pan.', pl: 'Dodaj makaron i kapuste do patelni.' }"
+                   x-data="{ en: 'Whilst the sauce is cooking so that the quorn piece cooked throughout, boil some rice.', pl: 'Whilst the sauce is cooking so that the quorn piece cooked throughout, boil some rice.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -277,7 +307,19 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Season with salt, pepper and vegeta, to taste. You can also add more butter for more flavour.', pl: 'Dopraw solą, pieprzem i vegetą. Można też dodać więcej masła do smaku.' }"
+                   x-data="{ en: 'Add salt and pepper to the sauce to taste.', pl: 'Add salt and pepper to the sauce to taste.' }"
+                   x-text="language === 'en' ? en : pl">
+                </p>
+              </div>
+            </li>
+            
+            <li class="relative pl-12 group">
+              <div class="absolute left-0 top-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold transform group-hover:scale-110 transition-transform">
+                10
+              </div>
+              <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <p class="text-gray-700 leading-relaxed"
+                   x-data="{ en: 'Serve with rice.', pl: 'Serve with rice.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
