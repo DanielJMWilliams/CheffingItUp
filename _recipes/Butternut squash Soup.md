@@ -3,7 +3,7 @@ layout: recipe
 title: "Butternut Squash Soup"
 title_pl: "Zupa Dyniowa"
 image: ""
-prep_time: 1hr
+prep_time: 1hr 15
 servings: 6
 description: ""
 description_pl: ""

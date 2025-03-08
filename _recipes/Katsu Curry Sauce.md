@@ -3,7 +3,7 @@ layout: recipe
 title: "Katsu Curry Sauce"
 title_pl: ""
 image: ""
-prep_time: 15mins
+prep_time: 15
 servings: 4
 description: ""
 description_pl: ""
