@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Secret Carrot Cake - Paulina Eats</title>
+  <title>Katsu Curry Sauce - Paulina Eats</title>
   <link rel="stylesheet" href="/CheffingItUp/assets/css/main.css">
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -44,7 +44,7 @@
         <header class="mb-12">
             <div class="flex justify-between items-center mb-8">
               <h1 class="text-4xl font-bold text-gray-800 font-serif max-w-[75%] truncate" 
-                  x-text="language === 'en' ? 'Secret Carrot Cake' : 'Ciasto Marchewkowe'">
+                  x-text="language === 'en' ? 'Katsu Curry Sauce' : 'Katsu Curry Sauce'">
               </h1>
               
               <!-- Language Toggle -->
@@ -70,14 +70,14 @@
               <path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z"/>
             </svg>
             <span class="font-medium" x-text="language === 'en' ? 'Servings' : 'Porcje'"></span>: 
-            <span class="ml-1 text-gray-800">8-12</span>
+            <span class="ml-1 text-gray-800">4</span>
           </div>
           <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
             <svg class="w-5 h-5 mr-2 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
             <span class="font-medium" x-text="language === 'en' ? 'Prep Time' : 'Czas przygotowania'"></span>: 
-            <span class="ml-1 text-gray-800">1hr 30mins <span x-text="language === 'en' ? 'mins' : 'min'"></span></span>
+            <span class="ml-1 text-gray-800">15mins <span x-text="language === 'en' ? 'mins' : 'min'"></span></span>
           </div>
         </div>
 
@@ -86,15 +86,15 @@
           <div class="max-w-2xl mx-auto group">
             <div class="relative overflow-hidden rounded-xl shadow-lg border-4 border-white">
               <img class="w-full h-80 object-cover transform transition duration-500 group-hover:scale-105" 
-                   src="/CheffingItUp/assets/img/gulasz.jpg" 
-                   alt="Secret Carrot Cake / Ciasto Marchewkowe"
-                   x-bind:alt="language === 'en' ? 'Secret Carrot Cake' : 'Ciasto Marchewkowe'">
+                   src="/CheffingItUp" 
+                   alt="Katsu Curry Sauce / "
+                   x-bind:alt="language === 'en' ? 'Katsu Curry Sauce' : ''">
             </div>
             <div class="mt-4 text-center">
               <p class="text-sm text-gray-600 italic font-medium px-4" 
                  x-show="language === 'en'">""</p>
               <p class="text-sm text-gray-600 italic font-medium px-4" 
-                 x-show="language === 'pl'">"To pyszna, tradycyjna polska potrawa (mniam mniam!)."</p>
+                 x-show="language === 'pl'">""</p>
             </div>
           </div>
         </div>
@@ -111,67 +111,55 @@
             <ul class="space-y-3 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '260g Plain Flour', pl: '260g Mąki' }">
+                  x-data="{ en: '2 tbsp. Vegetable Oil', pl: '2 tbsp. Vegetable Oil' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '2 tsp. Bicarbonate of Soda', pl: '2 tsp. Bicarbonate of Soda' }">
+                  x-data="{ en: '1 Onion', pl: '1 Onion' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '1/2 tsp. Salt', pl: '1/2 tsp. Salt' }">
+                  x-data="{ en: '1 Carrot', pl: '1 Carrot' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '3 tsp. Ground Cinnamon', pl: '3 tsp. Ground Cinnamon' }">
+                  x-data="{ en: '2-3 Garlic Cloves', pl: '2-3 Garlic Cloves' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '295ml Vegetable Oil', pl: '295ml Vegetable Oil' }">
+                  x-data="{ en: '1 tbsp. Curry Powder', pl: '1 tbsp. Curry Powder' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '200g Granulated Sugar', pl: '200g Granulated Sugar' }">
+                  x-data="{ en: '500ml Vegetable Stock', pl: '500ml Vegetable Stock' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '190g Light Brown Sugar', pl: '190g Light Brown Sugar' }">
+                  x-data="{ en: '1 tsp. Garam Masala', pl: '1 tsp. Garam Masala' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '2 tsp. Vanilla Extract', pl: '2 tsp. Vanilla Extract' }">
+                  x-data="{ en: 'Salt', pl: 'Salt' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
               
               <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '4 Eggs', pl: '4 Eggs' }">
-                <span class="text-orange-600 mr-2 mt-1">▹</span>
-                <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
-              </li>
-              
-              <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '300g Coarsely grated carrots', pl: '300g Coarsely grated carrots' }">
-                <span class="text-orange-600 mr-2 mt-1">▹</span>
-                <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
-              </li>
-              
-              <li class="text-gray-700 flex items-start py-2 even:bg-orange-50 rounded-lg px-3"
-                  x-data="{ en: '200g Coarsely Chopped Walnuts', pl: '200g Coarsely Chopped Walnuts' }">
+                  x-data="{ en: 'Pepper', pl: 'Pepper' }">
                 <span class="text-orange-600 mr-2 mt-1">▹</span>
                 <span class="flex-1" x-text="language === 'en' ? en : pl"></span>
               </li>
@@ -193,7 +181,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Preheat oven to 180°C.', pl: 'Rozgrzej piekarnik do 180°C.' }"
+                   x-data="{ en: 'Slice the onion, carrot and garlic.', pl: 'Slice the onion, carrot and garlic.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -205,7 +193,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'In one bowl, mix the dry ingredients: flour, bicarbonate of soda, salt, cinnamon.', pl: 'In one bowl, mix the dry ingredients: flour, bicarbonate of soda, salt, cinnamon.' }"
+                   x-data="{ en: 'Fry them until they start to soften, you can add a splash of water after frying for 5mins.', pl: 'Fry them until they start to soften, you can add a splash of water after frying for 5mins.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -217,7 +205,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'In another bowl, mix the oil, both sugars, vanilla extract.', pl: 'In another bowl, mix the oil, both sugars, vanilla extract.' }"
+                   x-data="{ en: 'Add the spices and fry for another 2mins.', pl: 'Add the spices and fry for another 2mins.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -229,7 +217,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Add the eggs to the oil and sugar mixture, one by one and mix after the addition of each one.', pl: 'Add the eggs to the oil and sugar mixture, one by one and mix after the addition of each one.' }"
+                   x-data="{ en: 'Add the stock.', pl: 'Add the stock.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -241,7 +229,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Add the dry ingredients to the wet ingredients bowl and mix until smooth.', pl: 'Add the dry ingredients to the wet ingredients bowl and mix until smooth.' }"
+                   x-data="{ en: 'Blend everything until smooth. If the sauce is quite runny, you can add a bit of flour. (Make sure that you mix the flour with water before addition, to not form lumps in the sauce.)', pl: 'Blend everything until smooth. If the sauce is quite runny, you can add a bit of flour. (Make sure that you mix the flour with water before addition, to not form lumps in the sauce.)' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
@@ -253,55 +241,7 @@
               </div>
               <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Fold incthe carrots and the nuts into the combined mixture.', pl: 'Fold incthe carrots and the nuts into the combined mixture.' }"
-                   x-text="language === 'en' ? en : pl">
-                </p>
-              </div>
-            </li>
-            
-            <li class="relative pl-12 group">
-              <div class="absolute left-0 top-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold transform group-hover:scale-110 transition-transform">
-                7
-              </div>
-              <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Place baking paper at the bottom of two small round cake tins and grease them.', pl: 'Place baking paper at the bottom of two small round cake tins and grease them.' }"
-                   x-text="language === 'en' ? en : pl">
-                </p>
-              </div>
-            </li>
-            
-            <li class="relative pl-12 group">
-              <div class="absolute left-0 top-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold transform group-hover:scale-110 transition-transform">
-                8
-              </div>
-              <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Divide the mixture into both the tins, evenly.', pl: 'Divide the mixture into both the tins, evenly.' }"
-                   x-text="language === 'en' ? en : pl">
-                </p>
-              </div>
-            </li>
-            
-            <li class="relative pl-12 group">
-              <div class="absolute left-0 top-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold transform group-hover:scale-110 transition-transform">
-                9
-              </div>
-              <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Place in the oven and bake for 45 mins. Check the middle is cooked by putting a skewer into the centre of the cake and checking if it comes out clean. If not, bake the cake for longer until done.', pl: 'Place in the oven and bake for 45 mins. Check the middle is cooked by putting a skewer into the centre of the cake and checking if it comes out clean. If not, bake the cake for longer until done.' }"
-                   x-text="language === 'en' ? en : pl">
-                </p>
-              </div>
-            </li>
-            
-            <li class="relative pl-12 group">
-              <div class="absolute left-0 top-0 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold transform group-hover:scale-110 transition-transform">
-                10
-              </div>
-              <div class="min-h-[4rem] bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <p class="text-gray-700 leading-relaxed"
-                   x-data="{ en: 'Cool the cake, before putting any icing on it.', pl: 'Cool the cake, before putting any icing on it.' }"
+                   x-data="{ en: 'Season to taste.', pl: 'Season to taste.' }"
                    x-text="language === 'en' ? en : pl">
                 </p>
               </div>
