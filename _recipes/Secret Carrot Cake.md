@@ -3,8 +3,8 @@ layout: recipe
 title: "Secret Carrot Cake"
 title_pl: "Ciasto Marchewkowe"
 image: "/assets/img/gulasz.jpg"
-prep_time: 45
-servings: 4
+prep_time: 1hr 30mins
+servings: 8-12
 description: ""
 description_pl: "To pyszna, tradycyjna polska potrawa (mniam mniam!)."
 
