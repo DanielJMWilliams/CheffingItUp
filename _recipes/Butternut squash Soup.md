@@ -21,7 +21,7 @@ ingredients:
     pl: ""
   - en: "1 Can of Coconut Milk"
     pl: ""
-  - en: "500ml Vegetable Stock"
+  - en: "500ml Vegetable Stock (2 stock cubes)"
     pl: ""
   - en: "Salt"
     pl: ""
