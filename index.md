@@ -21,4 +21,3 @@ title: "Paulina Eats"
   </div>
 </div>
 
-
