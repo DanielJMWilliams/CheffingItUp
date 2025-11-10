@@ -2,7 +2,7 @@
 layout: recipe
 title: "Secret Carrot Cake"
 title_pl: "Ciasto Marchewkowe"
-image: "/assets/img/gulasz.jpg"
+image: ""
 prep_time: 1hr 30
 servings: 8-12
 description: ""
