@@ -1,8 +1,8 @@
 ---
 layout: recipe
-title: ""
+title: "Focaccia"
 title_pl: ""
-image: ""
+image: "/assets/img/focaccia.jpg"
 prep_time: 
 servings: 
 description: ""
